@@ -9435,6 +9435,23 @@
         </div>
       </template></section>
   </div>
+
+<script>
+  // Selecione o elemento de vídeo pela classe
+  var video = document.querySelector(".smartplayer-video");
+
+  if (video) {
+    // Adicione um ouvinte para o evento "play"
+    video.addEventListener("play", function() {
+      // Quando o vídeo é reproduzido, desative o mudo
+      video.muted = false;
+    });
+
+    // Inicie a reprodução do vídeo
+    video.play();
+  }
+</script>
+  
 </body>
 
 </html>
